@@ -9,11 +9,11 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFA500; /* Orange background color */
-            color: #333; /* Default text color */
+            background-color: #FFA500;
+            color: #333;
         }
         header {
-            background-color: #FF8C00; /* Darker orange for header */
+            background-color: #FF8C00;
             padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -32,16 +32,16 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #fff; /* White text for links */
+            color: #fff;
             font-weight: bold;
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
-            color: #FFD700; /* Gold on hover */
+            color: #FFD700;
         }
         main {
             padding: 40px; 
-            background-color: #FFF9E6; /* Light cream background color */
+            background-color: #000000;
             border-radius: 10px; 
             max-width: 1200px; 
             margin: auto; 
@@ -51,9 +51,9 @@
             margin-bottom: 40px; 
         }
         h2 {
-            color: #FF4500; /* Red-orange for section titles */
+            color: #FF4500;
             font-size: 2em;
-            border-bottom: 2px solid #FFA500; /* Underline effect */
+            border-bottom: 2px solid #FFA500;
             padding-bottom: 10px;
         }
         .gallery {
@@ -67,7 +67,7 @@
             text-align: center;
             width: calc(33% - 20px); 
             margin-bottom: 20px; 
-            background-color: #FFF3E6; /* Soft peach background for items */
+            background-color: #FFF3E6;
             box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -78,69 +78,75 @@
         .item h3 {
             margin-top: 10px; 
         }
+        .item img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+            margin-bottom: 10px;
+        }
         form {
-           max-width :600px; 
-           margin :auto; 
-           background-color :#FFF3E6; /* Soft peach background for form */
-           padding :30px ; 
-           border-radius :8px ; 
-           box-shadow :0px 4px 15px rgba(0,0,0,.1); 
+           max-width: 600px; 
+           margin: auto; 
+           background-color: #FFF3E6;
+           padding: 30px; 
+           border-radius: 8px; 
+           box-shadow: 0px 4px 15px rgba(0,0,0,.1); 
        }
 
        form label {
-           display:block ; 
-           margin-bottom :10px ; 
+           display: block; 
+           margin-bottom: 10px; 
        }
 
        form input[type="text"], 
        form input[type="email"], 
        form select {
-           width :calc(100% - 12px); 
-           padding :12px ; 
-           margin-bottom :15px ; 
-           border-radius :5px ; 
-           border :1px solid #ccc ; 
+           width: calc(100% - 12px); 
+           padding: 12px; 
+           margin-bottom: 15px; 
+           border-radius: 5px; 
+           border: 1px solid #ccc; 
        }
 
        form input[type="submit"] {
-           background-color :#FF4500 ; 
-           color:white ; 
-           border:none ; 
-           padding :12px ; 
-           cursor:pointer ; 
-           border-radius :5px ; 
+           background-color: #FF4500; 
+           color: white; 
+           border: none; 
+           padding: 12px; 
+           cursor: pointer; 
+           border-radius: 5px; 
            transition: background-color 0.3s ease;
        }
 
        form input[type="submit"]:hover {
-           background-color:#D32F2F; /* Darker red on hover */
+           background-color:#D32F2F;
        }
 
        footer {
-           text-align:center ;
-           padding :20 px ;
-           background-color :#FF8C00 ;
-           position:absolute ; 
-           bottom :0 ;
-           width :100%;
+           text-align: center;
+           padding: 20px;
+           background-color: #FF8C00;
+           position: absolute;
+           bottom: 0;
+           width: 100%;
        }
        
        footer p {
-           margin :10 px ;
+           margin: 10px;
        }
        
-       @media (max-width :768 px) {
+       @media (max-width: 768px) {
            .item {
-               width :calc(50% -20 px); /* Two items per row on smaller screens */
+               width: calc(50% - 20px);
            }
        }
 
-       @media (max-width :480 px) {
+       @media (max-width: 480px) {
            .item {
-               width :calc(100% -20 px); /* One item per row on very small screens */
-               margin-bottom :15 px ; 
-               padding :10 px ; 
-               font-size:.9 em ; 
+               width: calc(100% - 20px);
+               margin-bottom: 15px; 
+               padding: 10px; 
+               font-size: .9em; 
            }
        }
     </style>
@@ -153,7 +159,7 @@
                 <li><a href="#cakes">Cakes</a></li>
                 <li><a href="#snacks">Snacks</a></li>
                 <li><a href="#order">Order Now</a></li>
-                <li><a href="#contact"><h3>Contact Us</h3></a></li> <!-- Added Contact Us link -->
+                <li><a href="#contact"><h3>Contact Us</h3></a></li>
              </ul>
          </nav>
      </header>
@@ -163,19 +169,23 @@
              <h2>Our Cakes</h2>
              <div class="gallery">
                  <div class="item">
-                     <h2>Wedding Cakes</h2>
+                     <img src="cake.jpg" alt="Wedding Cake">
+                     <h3>Wedding Cakes</h3>
                      <p>Beautifully crafted wedding cakes for your special day.</p>
                  </div>
                  <div class="item">
-                     <h2>Birthday Cakes</h2>
+                     <img src="path/to/birthday_cake.jpg" alt="Birthday Cake">
+                     <h3>Birthday Cakes</h3>
                      <p>Custom birthday cakes to make your celebrations memorable.</p>
                  </div>
                  <div class="item">
-                     <h2>Perfect Cakes</h2>
+                     <img src="path/to/anniversary_cake.jpg" alt="Anniversary Cake">
+                     <h3>Anniversary Cakes</h3>
                      <p>Amazing anniversary cakes to celebrate your love.</p>
                  </div>
                  <div class="item">
-                     <h2>Custom Cakes</h2> <!-- New item -->
+                     <img src="path/to/custom_cake.jpg" alt="Custom Cake">
+                     <h3>Custom Cakes</h3>
                      <p>Create your own unique cake tailored to your preferences.</p>
                  </div>
              </div>
@@ -185,27 +195,33 @@
              <h2>Our Snacks</h2>
              <div class="gallery">
                  <div class="item">
-                     <h2>Chin Chin</h2>
+                     <img src="path/to/chin_chin.jpg" alt="Chin Chin">
+                     <h3>Chin Chin</h3>
                      <p>Crispy and sweet chin chin for all occasions.</p>
                  </div>
                  <div class="item">
-                     <h2>Meat Pie</h2>
+                     <img src="path/to/meat_pie.jpg" alt="Meat Pie">
+                     <h3>Meat Pie</h3>
                      <p>Flaky meat pies filled with savory goodness.</p>
                  </div>
                  <div class="item">
-                     <h2>Banana Bread</h2>
+                     <img src="path/to/banana_bread.jpg" alt="Banana Bread">
+                     <h3>Banana Bread</h3>
                      <p>Moist banana bread perfect for snacks or desserts.</p>
                  </div>
                  <div class="item">
-                     <h2>Peanut Snacks</h2>
+                     <img src="path/to/peanut_snacks.jpg" alt="Peanut Snacks">
+                     <h3>Peanut Snacks</h3>
                      <p>Crispy peanut snacks that are irresistible.</p>
                  </div>
                  <div class="item">
-                     <h2>Zobo Drink</h2>
+                     <img src="path/to/zobo_drink.jpg" alt="Zobo Drink">
+                     <h3>Zobo Drink</h3>
                      <p>A refreshing zobo drink made from hibiscus flowers.</p>
                  </div>
                  <div class="item">
-                     <h2>Parfait</h2>
+                     <img src="path/to/parfait.jpg" alt="Parfait">
+                     <h3>Parfait</h3>
                      <p>A delightful parfait layered with fruits and cream.</p>
                  </div>
              </div>
@@ -221,34 +237,17 @@
                  <input type="email" id="email" name="email" required /><br />
 
                  <label for="order">Select Your Order:</label><br />
-                 <select id="order" name="order" required >
-                     <option value="">--Select--</option >
-                     <!-- Add more options as needed -->
-                     <option value="wedding_cake">Wedding Cake & zobo</option >
-                     <option value="birthday_cake">Birthday Cake & peanut</option >
-                     <!-- Add snacks options -->
-                     <option value="chin_chin">Chin Chin & meatpie</option >
-                 </select ><br />
+                 <select id="order" name="order" required>
+                     <option value="">--Select--</option>
+                     <option value="wedding_cake">Wedding Cake & zobo</option>
+                     <option value="birthday_cake">Birthday Cake & peanut</option>
+                     <option value="chin_chin">Chin Chin & meatpie</option>
+                 </select><br />
 
-                 <!-- Add a message parameter to pre-fill the WhatsApp message -->
-                 <input type="hidden" name="text" value= i-need-a-purchase
-                 
-                 <!-- Submit button -->
-                 <input type="submit" value="Submit Order" />
-             </form >
-         </section >
-
-         <!-- New Contact Us Section -->
-         <section id='contact'>
-             <h2>Contact Us</h2 >
-             <!-- Placeholder for contact information -->
-             <p>If you have any questions or special requests, feel free to reach out!</p >
-         </section >
-
+                 <input type="submit" value="Place Order" />
+             </form>
+         </section>
      </main>
-
-     <!-- Footer section can be added here if needed -->
-     <!--<footer><h2>2024 Vinda Confectioneries. All rights reserved</h2></footer>-->
-    
 </body>
-</html>
+    </html>
+                         
